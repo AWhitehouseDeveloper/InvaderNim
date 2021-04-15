@@ -11,6 +11,7 @@ namespace Assets.Scripts
 {
     class SceneController : MonoBehaviour
     {
+        public bool soundToMenu = true;
         static SceneController instance = null;
         public static SceneController Instance { get { return instance; } }
      
@@ -20,7 +21,7 @@ namespace Assets.Scripts
             DontDestroyOnLoad(this);
         }
         public void OnLoadScene(string sceneString)
-        {   
+        {
             StartCoroutine(LoadScene(sceneString));
         }
 
