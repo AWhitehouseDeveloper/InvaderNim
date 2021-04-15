@@ -22,6 +22,6 @@ public class StringUI : MonoBehaviour
 
     void Update()
     {
-        text.text = data.value;
+        if(text != null) text.text = data.value;
     }
 }

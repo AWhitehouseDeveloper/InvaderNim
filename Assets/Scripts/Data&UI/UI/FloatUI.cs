@@ -33,7 +33,7 @@ public class FloatUI : MonoBehaviour
     void Update()
     {
         slider.value = data.value;
-        valueText.text = data.value.ToString("F2");
+        if (valueText != null) valueText.text = data.value.ToString("F2");
     }
 
     void UpdateValue(float value)
