@@ -1565,6 +1565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f173f27354330cc4386f8257182aabe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundToMenu: 1
 --- !u!4 &1325665820
 Transform:
   m_ObjectHideFlags: 0
@@ -2075,7 +2076,7 @@ GameObject:
   - component: {fileID: 1873043120}
   - component: {fileID: 1873043119}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: MainMenuPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
