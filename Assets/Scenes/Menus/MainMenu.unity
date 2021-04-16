@@ -879,7 +879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Short Game
+  m_Text: ShortGame
 --- !u!222 &439119021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -898,8 +898,9 @@ GameObject:
   m_Component:
   - component: {fileID: 495742282}
   - component: {fileID: 495742283}
+  - component: {fileID: 495742284}
   m_Layer: 5
-  m_Name: LongButton
+  m_Name: Long Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,6 +975,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &495742284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495742281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593dcad08c920ad479b06a428cc06d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 495742283}
+  label: {fileID: 1885742584}
+  data: {fileID: 11400000, guid: d4d6c74a02ea0bd4d91de719fd2a0a86, type: 2}
 --- !u!1 &702420658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,6 +1581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f173f27354330cc4386f8257182aabe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundToMenu: 1
 --- !u!4 &1325665820
 Transform:
   m_ObjectHideFlags: 0
@@ -1613,7 +1630,7 @@ RectTransform:
   - {fileID: 1885327609}
   - {fileID: 495742282}
   m_Father: {fileID: 1873043118}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2093,8 +2110,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 702420659}
-  - {fileID: 1325684734}
   - {fileID: 1930579049}
+  - {fileID: 1325684734}
   m_Father: {fileID: 1689191110}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2151,8 +2168,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1885327609}
   - component: {fileID: 1885327610}
+  - component: {fileID: 1885327611}
   m_Layer: 5
-  m_Name: ShortButton
+  m_Name: ShortGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2227,6 +2245,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &1885327611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885327608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593dcad08c920ad479b06a428cc06d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1885327610}
+  label: {fileID: 439119020}
+  data: {fileID: 11400000, guid: 74df9229927eb6c4da8fb1021faea89b, type: 2}
 --- !u!1 &1885742582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,7 +2369,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1873043118}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
