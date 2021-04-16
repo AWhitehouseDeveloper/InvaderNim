@@ -280,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 36213100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1300856105}
+        m_TargetAssemblyTypeName: Game, Assembly-CSharp
+        m_MethodName: OnFinish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &36213100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 48087126}
+  - component: {fileID: 48087127}
   m_Layer: 5
   m_Name: hardCow2
   m_TagString: Untagged
@@ -351,9 +364,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119, y: -357}
+  m_AnchoredPosition: {x: -119, y: -316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &48087127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48087125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &146490582
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 146490583}
+  - component: {fileID: 146490584}
   m_Layer: 5
   m_Name: easyCow
   m_TagString: Untagged
@@ -387,9 +414,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: 18}
+  m_AnchoredPosition: {x: 130, y: 59}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &146490584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146490582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &149737412
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +751,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256941561}
+  - component: {fileID: 256941562}
   m_Layer: 5
   m_Name: easyCow7
   m_TagString: Untagged
@@ -735,9 +776,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 384, y: -234}
+  m_AnchoredPosition: {x: 384, y: -193}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &256941562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256941560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &302491148
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 302491149}
+  - component: {fileID: 302491150}
   m_Layer: 5
   m_Name: hardCow1
   m_TagString: Untagged
@@ -770,9 +825,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 384, y: -357}
+  m_AnchoredPosition: {x: 384, y: -316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &302491150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302491148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &331654514
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 331654515}
+  - component: {fileID: 331654516}
   m_Layer: 5
   m_Name: easyCow4
   m_TagString: Untagged
@@ -806,9 +875,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -234}
+  m_AnchoredPosition: {x: 3, y: -193}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &331654516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331654514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &377042741
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 377042742}
+  - component: {fileID: 377042743}
   m_Layer: 5
   m_Name: easyCow5
   m_TagString: Untagged
@@ -842,9 +925,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128, y: -234}
+  m_AnchoredPosition: {x: 128, y: -193}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &377042743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377042741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &608200755
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 608200756}
+  - component: {fileID: 608200757}
   m_Layer: 5
   m_Name: hardCow5
   m_TagString: Untagged
@@ -877,9 +974,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -357}
+  m_AnchoredPosition: {x: 3, y: -316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &608200757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608200755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &756809292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,6 +1527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927195914}
+  - component: {fileID: 927195915}
   m_Layer: 5
   m_Name: hardCow7
   m_TagString: Untagged
@@ -1440,9 +1551,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 503, y: -357}
+  m_AnchoredPosition: {x: 503, y: -316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &927195915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927195913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1021254163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,6 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f173f27354330cc4386f8257182aabe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundToMenu: 1
 --- !u!4 &1021254165
 Transform:
   m_ObjectHideFlags: 0
@@ -1570,6 +1695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1062508063}
+  - component: {fileID: 1062508064}
   m_Layer: 5
   m_Name: easyCow3
   m_TagString: Untagged
@@ -1594,9 +1720,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 261, y: -101}
+  m_AnchoredPosition: {x: 261, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1062508064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062508062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1125359283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,6 +1878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1164135245}
+  - component: {fileID: 1164135246}
   m_Layer: 5
   m_Name: hardCow3
   m_TagString: Untagged
@@ -1762,9 +1902,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 259, y: -357}
+  m_AnchoredPosition: {x: 259, y: -316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1164135246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164135244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1197366661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +2206,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243605795}
   m_CullTransparentMesh: 1
+--- !u!1 &1300856104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300856106}
+  - component: {fileID: 1300856105}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1300856105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300856104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd25a1befdc0ed4469dfa9db7fd898ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameText: {fileID: 1938112614}
+  p1Name: {fileID: 11400000, guid: 9cd8e3cc35f477a4c9785be98bd4c7e8, type: 2}
+  p2Name: {fileID: 11400000, guid: f6ca294964ff2d5479f81eda3ad15559, type: 2}
+--- !u!4 &1300856106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300856104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1435256198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,6 +2261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1435256199}
+  - component: {fileID: 1435256200}
   m_Layer: 5
   m_Name: easyCow2
   m_TagString: Untagged
@@ -2086,9 +2286,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: -101}
+  m_AnchoredPosition: {x: 130, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1435256200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435256198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1454300239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,6 +2311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1454300240}
+  - component: {fileID: 1454300241}
   m_Layer: 5
   m_Name: hardCow6
   m_TagString: Untagged
@@ -2121,9 +2335,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: -357}
+  m_AnchoredPosition: {x: -244, y: -316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1454300241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454300239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1460661134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1619488490}
+  - component: {fileID: 1619488491}
   m_Layer: 5
   m_Name: easyCow8
   m_TagString: Untagged
@@ -2232,9 +2460,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119, y: -234}
+  m_AnchoredPosition: {x: -119, y: -193}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1619488491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619488489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1716857632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1881901862}
+  - component: {fileID: 1881901863}
   m_Layer: 5
   m_Name: easyCow1
   m_TagString: Untagged
@@ -2670,9 +2912,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -101}
+  m_AnchoredPosition: {x: 3, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1881901863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881901861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1924068004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,6 +2937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1924068005}
+  - component: {fileID: 1924068006}
   m_Layer: 5
   m_Name: hardCow4
   m_TagString: Untagged
@@ -2705,9 +2961,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128, y: -357}
+  m_AnchoredPosition: {x: 128, y: -316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1924068006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924068004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
 --- !u!1 &1938112612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,6 +3186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2116509943}
+  - component: {fileID: 2116509944}
   m_Layer: 5
   m_Name: easyCow6
   m_TagString: Untagged
@@ -2941,6 +3211,19 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 259, y: -234}
+  m_AnchoredPosition: {x: 259, y: -193}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2116509944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116509942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6064815e49d774baf7f475c9ca668d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {r: 0, g: 0, b: 0, a: 255}
