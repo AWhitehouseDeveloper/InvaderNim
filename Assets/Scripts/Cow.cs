@@ -36,6 +36,7 @@ public class Cow : MonoBehaviour
     {
         if(type == eType.Deleted)
         {
+            Game.cows.Remove(this);
             Destroy(this);
         }
     }

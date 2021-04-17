@@ -5,7 +5,7 @@ using TMPro;
 
 public class Game : MonoBehaviour
 {
-    static List<Cow> cows = new List<Cow>();
+    public static List<Cow> cows = new List<Cow>();
 
     public TMP_Text playerNameText;
     public TMP_Text playerWinnerText;
