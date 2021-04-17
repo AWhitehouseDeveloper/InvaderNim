@@ -15,6 +15,24 @@ public class Cow : MonoBehaviour
     public eType Type { get => type; set => type = value; }
     public Color colorChange = new Color(0, 0, 0, 255);
 
+    public GameObject button;
+
+    public void OnClick()
+    {
+        if(type == eType.Selected)
+        {
+            Debug.Log("Selected");
+            DeSelect();
+        }
+        else if (type == eType.Default)
+        {
+            Debug.Log("Unselected");
+            Select();
+        }
+
+        Debug.Log(type);
+    }
+
     public void Select()
     {
         colorChange = new Color(150, 150, 150, 255);
@@ -36,8 +54,7 @@ public class Cow : MonoBehaviour
     {
         if(type == eType.Deleted)
         {
-            Game.cows.Remove(this);
-            Destroy(this);
+            button.SetActive(false);
         }
     }
 }
