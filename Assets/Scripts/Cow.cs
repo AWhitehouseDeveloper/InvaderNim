@@ -29,7 +29,7 @@ public class Cow : MonoBehaviour
 
     private void Awake()
     {
-        
+        Game.Instance().AddCow(this);
     }
 
     private void Update()

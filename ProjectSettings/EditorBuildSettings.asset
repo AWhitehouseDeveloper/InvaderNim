@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MainMenu.unity
     guid: e9a53245fe919fa45a7c786ce5307211
   - enabled: 1
-    path: Assets/Scenes/Menus/OptionsMenu.unity
+    path: Assets/Scenes/Menus/MMOptionsMenu.unity
     guid: 889aace85680d4e4aa3c04086b5e8bb0
   - enabled: 1
     path: Assets/Scenes/Menus/PVPSetUp.unity
