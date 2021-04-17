@@ -15,6 +15,18 @@ public class Cow : MonoBehaviour
     public eType Type { get => type; set => type = value; }
     public Color colorChange = new Color(0, 0, 0, 255);
 
+    public void OnClick()
+    {
+        if(type == eType.Selected)
+        {
+            DeSelect();
+        }
+        else if (type == eType.Default)
+        {
+            Select();
+        }
+    }
+
     public void Select()
     {
         colorChange = new Color(150, 150, 150, 255);
