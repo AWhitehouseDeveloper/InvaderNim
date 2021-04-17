@@ -20,7 +20,12 @@ public class StringUI : MonoBehaviour
         }
     }
 
-    void Update()
+    public void saveText()
+    {
+        data.value = text.text;
+    }
+
+    public void Update()
     {
         if(text != null) text.text = data.value;
     }

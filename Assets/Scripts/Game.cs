@@ -13,6 +13,7 @@ public class Game : MonoBehaviour
     public GameObject forfeitPanel;
 
     public TMP_Text playerNameText;
+    public TMP_Text playerFirstText;
     public TMP_Text playerWinnerText;
     public StringData p1Name;
     public StringData p2Name;
@@ -27,10 +28,16 @@ public class Game : MonoBehaviour
         return instance; 
     }
 
+    private void Start()
+    {
+        OnFirstSelect();
+    }
+
     public void OnToGame()
     {
+        firstTurnPanel.SetActive(false);
         userPanel.SetActive(true);
-        visiableCows = 9;
+        visiableCows = cows.Count;
 
         if (isP1Turn) playerNameText.text = p1Name;
         if (!isP1Turn) playerNameText.text = p2Name;
@@ -53,12 +60,12 @@ public class Game : MonoBehaviour
             else winnerName = p1Name;
             winnerPanel.SetActive(true);
             userPanel.SetActive(false);
-            playerWinnerText.text = winnerName;
+            playerWinnerText.text = winnerName + " won";
         }
 
         isP1Turn = !(isP1Turn);
-        if (isP1Turn) playerNameText.text = p1Name;
-        if (!isP1Turn) playerNameText.text = p2Name;
+        if (isP1Turn) playerNameText.text = p1Name.value;
+        if (!isP1Turn) playerNameText.text = p2Name.value;
 
         Debug.Log(isP1Turn);
     }
@@ -79,9 +86,25 @@ public class Game : MonoBehaviour
     {
         if (isP1Turn) winnerName = p2Name;
         else winnerName = p1Name;
+        forfeitPanel.SetActive(false);
         winnerPanel.SetActive(true);
         userPanel.SetActive(false);
         playerWinnerText.text = winnerName;
+    }
+
+    public void OnFirstSelect()
+    {
+        firstTurnPanel.SetActive(true);
+        userPanel.SetActive(false);
+        isP1Turn = (Random.Range(0, 2) == 1 ? true : false);
+        if(isP1Turn)
+        {
+           playerFirstText.text = p1Name +" \nis going first";
+        }
+        else
+        {
+           playerFirstText.text = p2Name +" \nis going first";
+        }
     }
 
     public void AddCow(Cow c)
