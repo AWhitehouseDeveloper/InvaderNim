@@ -485,6 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f173f27354330cc4386f8257182aabe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundToMenu: 1
 --- !u!4 &719325014
 Transform:
   m_ObjectHideFlags: 0
@@ -862,8 +863,9 @@ GameObject:
   - component: {fileID: 1217292271}
   - component: {fileID: 1217292270}
   - component: {fileID: 1217292269}
+  - component: {fileID: 1217292272}
   m_Layer: 5
-  m_Name: NameInput
+  m_Name: P1Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -959,7 +961,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1217292272}
+        m_TargetAssemblyTypeName: StringUI, Assembly-CSharp
+        m_MethodName: saveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTextSelection:
     m_PersistentCalls:
       m_Calls: []
@@ -1025,6 +1039,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217292267}
   m_CullTransparentMesh: 1
+--- !u!114 &1217292272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217292267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdafac1780874f47bd549ec21f384d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1104472966}
+  data: {fileID: 11400000, guid: 9cd8e3cc35f477a4c9785be98bd4c7e8, type: 2}
 --- !u!1 &1475256457
 GameObject:
   m_ObjectHideFlags: 0
